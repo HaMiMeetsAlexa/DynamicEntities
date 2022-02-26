@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicEntities", "DynamicEntities\DynamicEntities.csproj", "{94F64274-0863-4BFF-836A-7031403F057E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicEntities.Test", "DynamicEntities.Test\DynamicEntities.Test.csproj", "{53C55D5E-D68D-42DF-B296-4C9680041957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94F64274-0863-4BFF-836A-7031403F057E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F64274-0863-4BFF-836A-7031403F057E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F64274-0863-4BFF-836A-7031403F057E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F64274-0863-4BFF-836A-7031403F057E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C55D5E-D68D-42DF-B296-4C9680041957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C55D5E-D68D-42DF-B296-4C9680041957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C55D5E-D68D-42DF-B296-4C9680041957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C55D5E-D68D-42DF-B296-4C9680041957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97609AC5-FCAE-4DE9-833D-46F3AA9D1572}
+	EndGlobalSection
+EndGlobal
