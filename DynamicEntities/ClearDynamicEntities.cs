@@ -23,6 +23,10 @@ namespace DynamicEntities
     /// <see>
     ///     <cref>https://developer.amazon.com/en-US/docs/alexa/custom-skills/use-dynamic-entities-for-customized-interactions.html#expire-dynamic-entities-at-the-end-of-a-session</cref>
     /// </see>
+    /// A session is defined as the time a customer invokes the skill until they exit the skill.
+    /// A session is deemed complete either when a customer says "Exit", or when the skill times out.
+    /// The uploaded dynamic entities time out after 30 minutes, so they will persist if the customer re-invokes the skill before the end of this 30-minute period.
+    /// However, a best practice is to re-ingest the dynamic entity catalog in an intent response every session, even if the dynamic entities have not yet expired.
     /// </summary>
     [Serializable]
     internal sealed class ClearDynamicEntities
