@@ -20,7 +20,7 @@ namespace DynamicEntities.Test
         /// The test me.
         /// </summary>
         [Fact]
-        public void TestMe()
+        public void TestCreateSkillResponse()
         {
             var skillResponse = UpdateADynamicEntityWithReplace.CreateSkillResponse();
             Assert.NotNull(skillResponse);

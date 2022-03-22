@@ -23,7 +23,8 @@ namespace DynamicEntities
     ///     <cref>https://developer.amazon.com/en-US/docs/alexa/custom-skills/use-dynamic-entities-for-customized-interactions.html#exampleupdate-a-dynamic-entity-with-replace</cref>
     /// </see>
     /// </summary>
-    internal class UpdateADynamicEntityWithReplace
+    [Serializable]
+    internal sealed class UpdateADynamicEntityWithReplace
     {
         /// <summary>
         /// The create skill response.
