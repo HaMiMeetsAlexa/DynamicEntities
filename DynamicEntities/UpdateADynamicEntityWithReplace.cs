@@ -3,7 +3,10 @@
 //   (c) 2022 by Hans Ludwig Millmann
 // </copyright>
 // <summary>
-//   Defines the UpdateADynamicEntityWithReplace type.
+//   The update a dynamic entity with replace.
+//   <see>
+//   <cref>https://developer.amazon.com/en-US/docs/alexa/custom-skills/use-dynamic-entities-for-customized-interactions.html#exampleupdate-a-dynamic-entity-with-replace</cref>
+//   </see>
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -50,13 +53,10 @@ namespace DynamicEntities
         }
 
         /// <summary>
-        /// Create slot type values.
-        /// Values are taken from Amazon example
+        /// The create slot type values.
         /// </summary>
         /// <returns>
-        /// The <see>
-        ///     <cref>SlotTypeValue[]</cref>
-        /// </see>
+        /// The <see cref="SlotTypeValue[]"/>.
         /// </returns>
         private static SlotTypeValue[] CreateSlotTypeValues()
         {
@@ -95,18 +95,21 @@ namespace DynamicEntities
         }
 
         /// <summary>
-        /// The create slot type.
+        /// Create the slot type with <param name="slotTypeName"/>
+        /// and the values<param name="slotTypeValues"/>.
         /// </summary>
         /// <param name="slotTypeName">
         /// The slot type name.
         /// </param>
         /// <param name="slotTypeValues">
-        /// The slot type values names.
+        /// The slot type values.
         /// </param>
         /// <returns>
         /// The <see cref="SlotType"/>.
         /// </returns>
-        private static SlotType CreateSlotType(string slotTypeName, SlotTypeValue[] slotTypeValues)
+        private static SlotType CreateSlotType(
+            string slotTypeName, 
+            SlotTypeValue[] slotTypeValues)
         {
             var slot = new SlotType { Name = slotTypeName, Values = slotTypeValues };
 
@@ -114,7 +117,7 @@ namespace DynamicEntities
         }
 
         /// <summary>
-        /// The create replace directive.
+        /// Create a replace directive for the given <param name="slotType"/>.
         /// </summary>
         /// <param name="slotType">
         /// The slot type.
